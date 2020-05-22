@@ -1,0 +1,160 @@
+# Redirects from what the browser requests to what we serve
+# ============================================================================================= #
+#      Redirects netlify pages
+# ============================================================================================= #
+
+http://nandomoreiradev.netlify.com       https://edet.dev/?ref=netlify.com            301!
+http://nandomoreiradev.netlify.com/*     https://edet.dev/:splat?ref=netlify.com      301!
+https://nandomoreiradev.netlify.com      https://edet.dev/?ref=netlify.com            301!
+https://nandomoreiradev.netlify.com/*    https://edet.dev/:splat?ref=netlify.com      301!
+
+# ========================= #
+#   Blog Redirects
+# ========================= #
+/blog/2        https://blog.edet.dev/page/2?ref=netlify.com      301!
+/blog/3        https://blog.edet.dev/page/3?ref=netlify.com      301!
+/blog/4        https://blog.edet.dev/page/4?ref=netlify.com      301!
+/blog          https://blog.edet.dev/?ref=netlify.com            301!
+/blog/*        https://blog.edet.dev/:splat?ref=netlify.com      301!
+
+# =========================== #
+#       Redirects pages
+# =========================== #
+/about          /about        301!
+/about/*        /about        301!
+/br/about       /about        301!
+/en_ng/about    /about        301!
+/en/about       /about        301!
+/styleguide     /about        301!
+/cv             /about        301!
+/resume         /about        301!
+/about/now      /about        301!
+/about/now      /about        301!
+/now            /about        301!
+/contact        /contact      301!
+
+/experiments     https://github.com/asapabedi       301!
+/experiment/*    https://github.com/asapabedi       301!
+/experimentos    https://github.com/asapabedi       301!
+/experimentos/*  https://github.com/asapabedi       301!
+/pen-*           https://github.com/asapabedi       301!
+/open-source     https://github.com/asapabedi       301!
+/lab             https://github.com/asapabedi       301!
+
+# ============================================================================================= #
+#                       Redirects pages to asapabedi.github.io
+# ============================================================================================= #
+/lora                         https://asapabedi.github.io/lora/                          301!
+/lora/*                       https://asapabedi.github.io/lora/:splat                    301!
+/zetsu                        https://asapabedi.github.io/zetsu/                         301!
+/zetsu/*                      https://asapabedi.github.io/zetsu/:splat                   301!
+/mug                          https://asapabedi.github.io/mug/                           301!
+/mug/*                        https://asapabedi.github.io/mug/:splat                     301!
+/simplest                     https://asapabedi.github.io/simplest/                      301!
+/simplest/*                   https://asapabedi.github.io/simplest/:splat                301!
+/simplest-jekyll-theme        https://asapabedi.github.io/simplest/                      301!
+/nandomoreira-jekyll-theme    https://asapabedi.github.io/nandomoreira-jekyll-theme/     301!
+/nandomoreira-jekyll-theme/*  https://asapabedi.github.io/nandomoreira-jekyll-theme/     301!
+/end2end                      https://asapabedi.github.io/end2end                        301!
+/end2end/*                    https://asapabedi.github.io/end2end/:splat                 301!
+/dotX                         https://asapabedi.github.io/dotX/                          301!
+/dotX/*                       https://asapabedi.github.io/dotX/:splat                    301!
+/dotx-jekyll-theme            https://asapabedi.github.io/dotX/                          301!
+/lorem-gemidao-do-zap-ipsum   https://asapabedi.github.io/lorem-gemidao-do-zap-ipsum     301!
+/open-source-guide            https://asapabedi.github.io/open-source-guide              301!
+/open-source-guide/*          https://asapabedi.github.io/open-source-guide/:splat       301!
+/middleman-blog               https://asapabedi.github.io/middleman-blog                 301!
+/middleman-blog/*             https://asapabedi.github.io/middleman-blog/:splat          301!
+/chucknorris-jokes            https://chucknorris-jokes.nandomoreira.me                       301!
+/chucknorris-jokes/*          https://chucknorris-jokes.nandomoreira.me/:splat                301!
+
+# ====================================================================== #
+#                     Redirects projects posts
+# ====================================================================== #
+
+/tag/*                        /portfolio                                301!
+/categoria/*                  /portfolio                                301!
+/projects                     /portfolio                                301!
+/retinapro-com-br             /portfolio                                301!
+/project/*                    /project/:splat                           301!
+/projects/*                   /project/:splat                           301!
+/grgit                        /project/site-grgit.com.br                301!
+/ferramentas-digital          /project/ferramentas.digital-jekyll-theme 301!
+/projects/ferramentas-digital /project/ferramentas.digital-jekyll-theme 301!
+/icthus-odonto                /project/site-icthus-odonto               301!
+/onedev-studio                /project/onedev.studio                    301!
+/projects/remerterapias       /project/site-remerterapias.com.br        301!
+/remerterapias                /project/site-remerterapias.com.br        301!
+/projects/nandomoreira        /project/nandomoreira.me                  301!
+/nandomoreira                 /project/nandomoreira.me                  301!
+/abracce                      /project/abracce.org.br                   301!
+/projects/wprosdocimo         /project/blog-wprosdocimo.com.br          301!
+/projects/oggdigital          /project/site-oggdigital.com.br           301!
+/oggdigital                   /project/site-oggdigital.com.br           301!
+/projects/divinus-paes        /project/site-divinus-paes                301!
+/divinus-paes                 /project/site-divinus-paes                301!
+/projects/hidrautest          /project/site-hidrautest.com.br           301!
+/hidrautest                   /project/site-hidrautest.com.br           301!
+/pizzariadetroit              /project/site-pizzariadetroit.com.br      301!
+
+# =========================================== #
+#           Redirects blog posts
+# =========================================== #
+
+/comece-com-gulpjs /blog/comece-com-gulp 301!
+/sass-atomic-design /blog/sass-e-atomic-design 301!
+/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks /blog/como-testar-erros-na-funcao-wp_mail-no-wordpress-usando-hooks 301!
+/wordpress-plugins-x-functions-php /blog/wordpress-plugins-x-functions-php 301!
+/meu-ambiente-de-trabalho-em-7-itens /blog/meu-ambiente-de-trabalho-em-7-itens 301!
+/sass-variaveis-parte-2 /blog/sass-variaveis-parte-2 301!
+/sass-parte-3-mixins /blog/sass-parte-3-mixins 301!
+/sass-parte-4-funcoes /blog/sass-parte-4-funcoes 301!
+/como-instalar-o-gulp-4 /blog/como-instalar-o-gulp-4 301!
+/sass-parte-5-placeholder /blog/sass-parte-5-placeholder 301!
+/usando-categorias-e-tags-no-jekyll /blog/usando-categorias-e-tags-no-jekyll 301!
+/sass-e-atomic-design /blog/sass-e-atomic-design 301!
+/fazendo-sistema-de-busca-no-jekyll-com-angularjs /blog/fazendo-sistema-de-busca-no-jekyll-com-angularjs 301!
+/criando-a-bandeira-do-brasil-apenas-com-css /blog/criando-a-bandeira-do-brasil-apenas-com-css 301!
+/usando-browsersync-em-uma-aplicacao-ruby-on-rails /blog/usando-browsersync-em-uma-aplicacao-ruby-on-rails 301!
+/como-converter-todos-arquivos-scss-de-um-diretorio-para-extensao-sass /blog/como-converter-todos-arquivos-scss-de-um-diretorio-para-extensao-sass 301!
+/calendario-rapido-direto-no-terminal /blog/calendario-rapido-direto-no-terminal 301!
+/usando-o-selector-target-para-criar-modal-apenas-com-css /blog/usando-o-selector-target-para-criar-modal-apenas-com-css 301!
+/ativando-o-tema-dark-nativo-do-chrome-dev-tools /blog/ativando-o-tema-dark-nativo-do-chrome-dev-tools 301!
+/comece-com-gulp /blog/comece-com-gulp 301!
+/como-testar-erros-na-funcao-wp_mail-no-wordpress-usando-hooks /blog/como-testar-erros-na-funcao-wp_mail-no-wordpress-usando-hooks 301!
+/como-um-time/ /blog/como-um-time/ 301!
+/como-um-time /blog/como-um-time/ 301!
+/ei-front-end-voce-conhece-o-panda/ /blog/ei-front-end-voce-conhece-o-panda/ 301!
+/ei-front-end-voce-conhece-o-panda /blog/ei-front-end-voce-conhece-o-panda/ 301!
+/8-meses-de-malapronta-e-o-fim /blog/8-meses-de-malapronta-e-o-fim 301!
+/agradeca-mais-e-reclame-menos /blog/agradeca-mais-e-reclame-menos 301!
+/apps-que-uso /blog/apps-que-uso 301!
+/blog-wilson-luiz-prosdocimo /blog/blog-wilson-luiz-prosdocimo 301!
+/como-esta-voce-agora-e-como-estara-daqui-30-anos /blog/como-esta-voce-agora-e-como-estara-daqui-30-anos 301!
+/como-incluir-videos-do-youtube-no-jekyll /blog/como-incluir-videos-do-youtube-no-jekyll 301!
+/conhecendo-o-pre-processador-sass-parte-1 /blog/conhecendo-o-pre-processador-sass-parte-1 301!
+/criando-formulario-de-contato-para-wordpress-com-odin-framework /blog/criando-formulario-de-contato-para-wordpress-com-odin-framework 301!
+/criando-um-blog-com-vuejs-o-nuxtjs /blog/criando-um-blog-com-vuejs-o-nuxtjs 301!
+/faco-front-end-de-graca /blog/faco-front-end-de-graca 301!
+/hoje-o-momento-e-de-ser-e-estar /blog/hoje-o-momento-e-de-ser-e-estar 301!
+/nao-seja-apenas-um-recortador-de-psd /blog/nao-seja-apenas-um-recortador-de-psd 301!
+/programador-a-comunidade-precisa-de-voce /blog/programador-a-comunidade-precisa-de-voce 301!
+/retro-2016-planing-2017 /blog/retro-2016-planing-2017 301!
+/role-aleatorio-com-conversas-aleatorias /blog/role-aleatorio-com-conversas-aleatorias 301!
+/wp-cli-uma-interface-de-linha-de-comando-para-wordpress /blog/wp-cli-uma-interface-de-linha-de-comando-para-wordpress 301!
+/yeoman-generator-gulp-boilerplate /blog/yeoman-generator-gulp-boilerplate 301!
+/yo-wordpress-iniciando-projects-para-wordpress-em-segundos /blog/yo-wordpress-iniciando-projects-para-wordpress-em-segundos 301!
+
+# ========================= #
+#   Redirects 404 pages
+# ========================= #
+/404          /404.html  301!
+/2015         /          301!
+/2015/*       /          301!
+/2014         /          301!
+/2014/*       /          301!
+/2013         /          301!
+/2013/*       /          301!
+/2012         /          301!
+/2012/*       /          301!
+/wp/v2/*      /          301!

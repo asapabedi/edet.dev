@@ -1,0 +1,142 @@
+@import '~stylus/index.styl'
+
+body
+  &, &.theme-light
+    background-color $background-color
+    ::selection
+      background lighten($primary-color, 50%)
+      color $text-color
+
+  &.theme-dark
+    &, .hero h1, .hero h1 a
+      color #fff
+
+    .dark-switcher
+      svg
+        fill #eabf57 !important
+
+    p, .brand a
+      color darken(#fff, 5%)
+
+    svg
+      fill #fff
+
+    blockquote:after
+      color rgba(#fff, .1)
+
+    a
+      color lighten($link-color, 30%)
+      border-color lighten($link-color, 30%)
+      &:hover,
+      &:active,
+      &:focus
+        color lighten($link-color, 10%)
+        border-color lighten($link-color, 10%)
+        svg
+          fill lighten($link-color, 10%)
+
+    .nav .nav__link
+      &:hover,
+      &:active,
+      &:focus,
+      &.nav__link--active
+        opacity 0.75
+        box-shadow inset 0 -0.75rem 0 rgba(#fff, .25)
+
+    &,
+    .hero,
+    .hero .newjobs,
+    .pageHeader:after
+      background-color $background-dark-color
+
+    .hero:after,
+    .pageHeader:before
+      background-image none
+      background-color darken($background-dark-color, 25%)
+
+    .card,
+    .socialIcons__link,
+    .pagination a,
+    .button,
+    .project .card,
+    .card.form
+      box-shadow none
+
+    .header .headerInner,
+    .header .newjobs,
+    .whatsApp__message
+      border-color #000
+
+    .whatsApp__message:before
+      border-top-color #000
+    .whatsApp__message:after
+      border-top-color darken($background-dark-color, 15%)
+
+    .header .headerInner,
+    .header .newjobs,
+    .button--primary,
+    .whatsApp__link,
+    .whatsApp__message,
+    .nav__list
+      background-color darken($background-dark-color, 25%)
+
+    .nav__list
+      +above($desktop)
+        background-color transparent
+
+    .pageHeader,
+    .pagination__link,
+    .button--secondary
+      background-color darken($background-dark-color, 15%)
+    .pageHeader
+      background-image linear-gradient(-270deg, darken($background-dark-color, 25%) 0%, darken($background-dark-color, 15%) 100%)
+
+    .pagination__link,
+    .button--primary,
+    .button--secondary,
+    .donate-link,
+    .nav .toggle-button
+      color #fff
+      border 2px solid rgba(#fff, .25)
+      background-color darken($background-dark-color, 15%)
+      &:hover,
+      &:focus
+        border-color rgba(#fff, .5)
+        background-color rgba(#fff, .05)
+
+    .card,
+    .socialIcons__link
+      background-color rgba($background-color, .1)
+
+    .footer,
+    .skills,
+    .project .card,
+    .card.form
+      background-color lighten($background-dark-color, 10%)
+
+    .footer__base
+      background-color lighten($background-dark-color, 15%)
+
+    .form__input
+      background rgba(#fff, .2)
+      color #fff
+      border-color rgba(#fff, 0.1)
+
+    .singleHeader
+      &:before
+        background-color lighten(#000, 5%)
+
+    .skill__card.card
+      background-color darken(#fff, 15%)
+
+    [data-tooltip]:hover:before
+      background darken(#fff, 15%)
+      color $text-color
+
+    [data-tooltip]:hover:after
+      border-top-color darken(#fff, 15%)
+      color $text-color
+
+    ::selection
+      background #fff
+      color $text-color

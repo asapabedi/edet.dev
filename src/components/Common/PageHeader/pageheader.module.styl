@@ -1,0 +1,95 @@
+@import '~stylus/index.styl'
+
+.pageHeader
+  padding 3.75rem 0
+  margin-bottom 2.5rem
+  width 100%
+  background-color $primary-color
+  background-image linear-gradient(-270deg, $linear-from-color 0%, $linear-to-color 100%)
+  position relative
+  &:before,
+  &:after
+    content ''
+    display block
+    width 100%
+    position absolute
+    right 0
+    bottom 0
+    left 0
+  &:before
+    height 40px
+    animation clipIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 500ms both
+    background-color rgba($background-color, .4)
+  &:after
+    height 20px
+    animation clipIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 250ms both
+    background-color $background-color
+  +above($tablet)
+    padding 6.25rem 0 9.375rem
+    display flex
+    align-items center
+    &:before
+      height 80px
+    &:after
+      height 40px
+
+.smalltitle,
+.smalltitle a,
+.title,
+.title a,
+.description p
+  color #fff
+
+.smalltitle a,
+.title a
+  text-decoration underline
+
+.smalltitle
+  opacity 0.75
+  font-size 1rem
+  text-transform uppercase
+  font-weight 400
+  margin 0 0 .625rem
+  line-height 1
+  animation fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 50ms both
+  font-family $font-family-base
+  +above($tablet)
+    font-size 1.25rem
+
+.title
+  font-size 1.75rem
+  margin 0
+  line-height 1.2
+  animation fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 250ms both
+  +above($tablet)
+    font-size 2.875rem
+    line-height 1
+
+.description
+  animation fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 500ms both
+  opacity 0.8
+  a
+    color #fff
+    text-decoration underline
+  p
+    margin .9375rem 0 0
+    font-size 1.125rem
+    +above($tablet)
+      font-size 1.25rem
+  h2
+    margin 2.5rem 0
+    font-size 2.375rem
+    a
+      text-decoration none
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes clipIn
+  0%
+    clip-path polygon(0% 100%, 100% 100%, 100% 100%)
+  100%
+    clip-path polygon(0% 100%, 100% 100%, 100% 0%)

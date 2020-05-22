@@ -1,0 +1,97 @@
+@import '~stylus/index.styl'
+
+.form
+  @extend .clearfix
+  padding 1.5625rem
+  margin 1.875rem auto
+  +above($tablet)
+    width 90%
+    margin 0 auto 2.5rem
+    display inline-block
+
+  fieldset
+    margin 1.5rem 0
+
+  legend
+    padding-bottom .625rem
+    margin-bottom 1.25rem
+    font-size 1.125rem
+    border-bottom .0625rem solid rgba(#000, .1)
+
+.label
+  cursor pointer
+  font-size 1rem
+  margin-bottom .25rem
+  opacity 0.6
+
+.label,
+.group,
+.input
+  display block
+  width 100%
+  appearance none
+
+.group
+  margin-bottom .9375rem
+
+.input
+  outline 0
+  display block
+  width 100%
+  padding .75rem 1rem
+  font-size 1rem
+  line-height 1.25
+  color $text-color
+  background-color #fff
+  background-image none
+  background-clip padding-box
+  border 2px solid #dfe5f2
+  border-radius .5rem
+  box-shadow inset 0 1px 1px rgba(#000, 0.08)
+  transition border-color .35s $timing-function
+  &:focus
+    color $text-color
+    background-color #fff
+    border-color $secondary-color
+    outline 0
+
+.select
+  background #fff url(./select-arrow.svg) no-repeat 97% 50%
+  cursor pointer
+
+.textarea
+  height 7.5rem
+
+.footer
+  padding-top .9375rem
+  margin-top .9375rem
+  border-top 1px solid rgba(#000, .1)
+  display flex
+  flex-direction column-reverse
+  flex-wrap wrap
+  +above($tablet)
+    justify-content space-between
+    align-items center
+    flex-direction row
+    flex-wrap no-wrap
+  small
+    opacity 0.6
+    display block
+    text-align center
+    margin-top .9375rem
+    +above($tablet)
+      display inline-block
+      text-align left
+      margin-top 0
+
+.inputError
+  background-color rgba(#f00, 0.05)
+  border-color rgba(#f00, 0.2)
+
+.alertError
+  display block
+  cursor pointer
+  margin 0
+  color #f00
+  font-size .875rem
+  opacity 0.85

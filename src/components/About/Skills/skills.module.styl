@@ -1,0 +1,43 @@
+@import '~stylus/index.styl'
+
+.skills
+  margin 3.75rem 0 0
+  padding 3.75rem 0
+  text-align center
+  background-color #fff
+  h4
+    font-size 1.75rem
+    margin-top 0
+
+.list
+  display flex
+  justify-content center
+  flex-direction row
+  flex-wrap wrap
+
+.item
+  width auto
+  padding 10px
+
+.inner
+  display flex
+  align-items center
+  justify-content center
+  @extend .card--hover
+  padding 10px
+
+.small
+  .inner
+    padding 10px
+  h4
+    font-size 1.25rem
+    +above($tablet)
+      font-size 1.75rem
+
+.large
+  h4
+    font-size 2rem
+    +above($tablet)
+      font-size 2.375rem
+  .inner
+    padding 25px

@@ -1,0 +1,36 @@
+@import '~stylus/index.styl'
+
+.headerInner,
+.inner,
+.navRight
+  display flex
+  align-items center
+
+.header
+  z-index 100
+  position fixed
+  width 100%
+  z-index 1000
+  top 0
+  left 0
+  margin 0
+
+.headerInner
+  border-bottom .0625rem solid rgba(#000, .05)
+  background-color #fff
+  min-height 80px
+
+.inner
+  justify-content space-between
+  padding 0
+
+.navRight
+  +below($desktop)
+    padding-right 5rem
+  +below($mobile-lg)
+    padding-right 4.0625rem
+  +below($mobile-sm)
+    padding 0
+    position fixed
+    top 80px
+    right 10px

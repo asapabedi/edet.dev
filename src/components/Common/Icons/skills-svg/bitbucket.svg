@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>bitbucket</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="108.633%" y1="13.818%" x2="46.927%" y2="78.776%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="bitbucket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 12.000000)">
+            <polygon id="Path" points="101.272 153.561 154.721 153.561 167.622 78.241 87.06 78.241"></polygon>
+            <path d="M8.308,1 C5.88463886,0.968663858 3.57148637,2.01067656 1.98920586,3.84644604 C0.40692536,5.68221552 -0.282469205,8.12377241 0.106,10.516 L34.925,221.889 C35.8202657,227.228428 40.420223,231.154141 45.834,231.199 L212.874,231.199 C216.936938,231.250772 220.425366,228.32 221.075,224.309 L255.895,10.557 C256.282843,8.16490827 255.59302,5.72374903 254.010591,3.88841694 C252.428163,2.05308485 250.115124,1.01146689 247.692,1.043 L8.308,1 Z M154.924,153.768 L101.609,153.768 L87.173,78.348 L167.843,78.348 L154.924,153.768 Z" id="Shape" fill="#2684FF" fill-rule="nonzero"></path>
+            <path d="M244.61,78.242 L167.694,78.242 L154.785,153.602 L101.513,153.602 L38.611,228.265 C40.6047279,229.988727 43.1465289,230.947174 45.782,230.969 L212.73,230.969 C216.790032,231.021306 220.276361,228.093063 220.926,224.085 L244.61,78.242 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

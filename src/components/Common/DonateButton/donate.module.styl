@@ -1,0 +1,25 @@
+@import '~stylus/index.styl'
+
+.link
+  @extend .button
+  display flex
+  align-items center
+  line-height 2.5rem
+  padding 0 .625rem
+  border 2px solid $primary-color
+  color $text-color
+  justify-content center
+  background-color transparent
+  +below($desktop)
+    background-color $background-color
+  span, svg
+    display inline-block
+  svg
+    width 20px
+    height 20px
+    fill $primary-color
+  &:hover,
+  &:active,
+  &:focus
+    svg
+      fill $text-color

@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/asapabedi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://edet.dev
+  * I am asapabedi (https://keybase.io/asapabedi) on keybase.
+  * I have a public key with fingerprint F49E 1B80 5663 D02C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ca3b56321561187646defb5e577df413d2f457512f4837c3fe893378d13f66aa0a",
+      "fingerprint": "983d38667ebc0a942b8ba6a9f49e1b805663d02c",
+      "full_hash": "4a4f055bcdf59ee68422ff949105278a5a3adb12280ca41ac0a2c94ceffa70a6",
+      "host": "keybase.io",
+      "key_id": "f49e1b805663d02c",
+      "kid": "0101ca3b56321561187646defb5e577df413d2f457512f4837c3fe893378d13f66aa0a",
+      "uid": "333a852043abbafcf2b59650a0c3b119",
+      "username": "asapabedi"
+    },
+    "type": "eldest",
+    "version": 1
+  },
+  "ctime": 1590102898,
+  "expire_in": 157680000,
+  "prev": null,
+  "seqno": 1,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMISAnicrZJdSBRRFMfXUjM/Ioos8EGYUspWm5k7987MpqagFfZFLyVorXdm7rjD
+rrvbzK4pKglaUaB9PRRJVCD2ZbaSFRZBmqBo9KFYIRKFChkm9vEQidldo7ceuy+H
+e87//O45556ehMW22IgDau6P7GflroiBLiVoO9gbZ1Yxik+rZBxVjJssGOLRiBVw
+ug2NcTAsx3IqBgpEgOcg4jhJRALSiK5AAkVR0wUOaLwuQBFy1EhAVIFOJBkAUdI4
+oCOEMYsZO6Mb3lJi+k3DG6BYWQIakBASiaKyWBZ4RVIwwrIuyIRTJBYiBDSWV8OJ
+QY/H6cKWi6YJWNBZCBVV06FMCJIEntd1WZA5FvKihCEGWFM4npdYFQscpmxelQWV
+6DoWWYwozuWzwgXQXhVskQzDR3304lzo9h/P/+cxBBdwAAAsQZ4VAFYUrKs6r0AZ
+QRazKlA4Tg4LLWJ6cRmhamxhP1aIZjA1diZQ6Q/7/nwS1ZUT0zJ8XsbB0aAaMMIZ
+HJRpwbwkS3aGVPgNkziNsAKKSGLpsTN+k5QzDi8drZ2xyCGvj0YpG5dStGWUenEg
+aBKmpvtJcaQtItYWHbUovCq22KXL/y7QzytLfm1sGkuaOetICMaU5qf29bccvdw7
+G9nuyAy2XThd9DIzJ+3puZGpuxOH+6bdVY+/Dmd8kArT5qJbPscP+W5MNlfv69q/
+AXXO5aTU6+Vl3lpbVN/KTvRo3DGeWFflm04pGQo+OL5lZHDNnLm9J2psanPdpdFP
+F9M7riYNx69L3hYdyrI5b2vu+eb+XaNF9dfmR86Q4sHWiQqhTtyT2Oi+43lxrPdm
+XsyJnZ6OxJM5dTH3205VTry/9/bbpvbQTOxo6Hv7bEPriq3Xq+PGmxq/dKxelt38
+LnX3QG79eWdEwevuj69KJmszio+sTd+hrgoVFM67nmeliMkPRxqG9+b05a3Pv/Xm
+N9MzMNQ=
+=Se9q
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/asapabedi
+
+==================================================================
