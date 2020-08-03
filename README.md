@@ -1,8 +1,8 @@
 # [edet.dev](http://edet.dev/)
 
-> 🏃 My superfast personal site running on Gatsby, React, and Node.js
+> My super-fast portfolio site, made with Gatsby, react and Node.js
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3c67e668-bd6a-433c-8abf-1725ed7504d3/deploy-status)](https://app.netlify.com/sites/nandomoreiradev/deploys) [![Maintainability](https://api.codeclimate.com/v1/badges/2495e8bab6832a2604f2/maintainability)](https://codeclimate.com/github/asapabedi/edet.dev/maintainability)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3c67e668-bd6a-433c-8abf-1725ed7504d3/deploy-status)](https://app.netlify.com/sites/edet.dev/deploys) [![Maintainability](https://api.codeclimate.com/v1/badges/2495e8bab6832a2604f2/maintainability)](https://codeclimate.com/github/asapabedi/edet.dev/maintainability)
 
 ## Build Setup
 
@@ -44,9 +44,9 @@ See [Releases](../../releases) for detailed changelog.
 
 ## Author
 
-| [![twitter/asapabedi](https://avatars6.githubusercontent.com/u/1318271?v=4&s=120)](http://twitter.com/asapabedi "Follow @asapabedi on Twitter") |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Fernando Moreira](http://twitter.com/asapabedi)                                                                                                |
+| [![twitter/asapabedi](https://avatars2.githubusercontent.com/u/29050206?s=460&v=4)](http://twitter.com/asapabedi "Follow @asapabedi on Twitter") |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Abednego Edet](http://twitter.com/asapabedi)                                                                                                    |
 
 ## License
 
@@ -63,12 +63,4 @@ WWWWWW||WWWWWW
        (__|__|(__|__|
 ```
 
-Code is under [MIT License](/LICENSE) - © Fernando Moreira
-
-## Buy me a coffee?
-
-It will encourage me to keep it going, fix whatever bugs you find and spend time making it better :D
-
-<a href="https://www.paypal.me/nandomoreira/5">
-  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee%3F-US%24%205-blue.svg" alt="Buy me a coffee? - https://www.paypal.me/nandomoreira/5">
-</a>
+Code is under [MIT License](/LICENSE) - © Abednego Edet

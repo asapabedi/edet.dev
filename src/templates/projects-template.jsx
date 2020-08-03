@@ -36,7 +36,7 @@ export default ({ data, pageContext }) => {
     ? `${ title } of Abednego Edet`
     : `${ title } of Abednego Edet - Page ${ (currentPage - 1).toString() }`
   const description =
-    'I like to create high performant web tools and applications, I like to make the world for others a little easier.'
+    'I like to create stunning web tools and applications, I like to make the world for others a little easier.'
 
   return (
     <Main>
