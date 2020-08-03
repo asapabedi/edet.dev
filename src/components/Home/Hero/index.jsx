@@ -35,7 +35,7 @@ export const Hero = ({ navLinks, socialIcons, avatar }) => (
         itemProp="description"
       >
         I am a <strong itemProp="jobTitle">freelance software developer</strong>.{' '}
-        I help <Link itemProp="url" to="/portfolio">brands and businesses</Link> create stunning web projects. In my spare time I write on <a href="https://dev.to/asapabedi" target="_blank" rel="noopener noreferrer">dev.to</a>.{' '} I like to make the world for others a little easier.
+        I help <Link itemProp="url" to="/portfolio">brands and businesses</Link> create stunning web projects. In my spare time I write on <a href="https://dev.to/asapabedi" target="_blank" rel="noopener noreferrer">dev.to</a>,{' '} Making the world for others a little easier.
       </p>
       {/* <Nav navLinks={navLinks} /> */}
       <SocialIcons icons={socialIcons} />
