@@ -25,8 +25,8 @@ const Contact = ({ data }) => (
         <div className={classes.left}>
           <p className="card">
             <span>Send an email to: </span>
-            <a className="Contact__email" href="mailto:asapabedi@gmail.com">
-              asapabedi@gmail.com
+            <a className="Contact__email" href="mailto:ever.asap@gmail.com">
+              ever.asap@gmail.com
             </a>
           </p>
           <span

@@ -40,13 +40,6 @@ const HTML = props => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script
-          id="mcjs"
-          key={`mcjs`}
-          dangerouslySetInnerHTML={{
-            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimptatic.com/mcjs-connected/js/users/f2095912777fe1bab6fae1135/eb2821cf50be2e86a1ad76691.js");`
-          }}
-        />
         {headComponents}
       </head>
       <body {...bodyAttributes}>
@@ -57,7 +50,7 @@ const HTML = props => {
           className="gatsby-noscript"
         >
           <style>{noscriptStyle}</style>
-          Este site funciona melhor com o JavaScript ativado.
+          This site works best with JavaScript enabled.
         </noscript>
         <div
           key={`body`}

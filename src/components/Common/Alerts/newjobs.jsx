@@ -18,7 +18,7 @@ const Newjobs = () => {
   }, [])
 
   const fetchHireable = () =>
-    fetch('https://api.github.com/users/asapabedi')
+    fetch('https://api.github.com/users/usefulsomebody')
       .then(response => response.json())
       .then(({ hireable }) => setHireable(!!hireable))
       .catch(error => console.error(error))

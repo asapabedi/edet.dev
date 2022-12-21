@@ -69,7 +69,7 @@ export const SEO = ({
           <meta name="resource-type" content="document" />
           <meta name="distribution" content="global" />
           <meta name="rating" content="general" />
-          <meta property="og:url" content={data.url} />}
+          <meta property="og:url" content={data.url} />
           <meta property="og:locale" content="en_NG" />
           <meta property="og:title" content={data.title} />
           <meta property="og:type" content={data.fbType} />

@@ -28,11 +28,6 @@ export const projectQuery = graphql`
         url
         designedby
         image {
-          childImageSharp {
-            sizes(maxWidth: 1300, quality: 90) {
-              ...GatsbyImageSharpSizes
-            }
-          }
           publicURL
         }
       }

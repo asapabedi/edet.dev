@@ -136,7 +136,7 @@ const pluginManifest = {
   short_name: `${ name }`,
   start_url: '/',
   background_color: '#ffffff',
-  theme_color: '#e02929',
+  theme_color: '#eee333',
   display: 'minimal-ui',
   icon: 'static/icon.png'
 }

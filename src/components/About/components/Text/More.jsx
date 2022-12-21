@@ -17,21 +17,21 @@ export const More = ({ data, classes }) => {
       <p>
           🐤 follow me on Twitter{' '}
         <a
-          href="https://twitter.com/asapabedi"
+          href="https://twitter.com/usefulsomebody"
           rel="noopener noreferrer"
           target="_blank"
         >
-            @asapabedi
+            @usefulsomebody
         </a>
       </p>
       <p>
           📷 follow me on Instagram
         <a
-          href="https://instagram.com/asapabedi"
+          href="https://instagram.com/usefulsomebody"
           rel="noopener noreferrer"
           target="_blank"
         >
-            @asapabedi
+            @usefulsomebody
         </a>
           .
       </p>
@@ -46,11 +46,11 @@ export const More = ({ data, classes }) => {
       <p>
         ✉️ Or if you prefer you can send an email to{' '}
         <a
-          href="mailto:asapabedi@gmail.com"
+          href="mailto:ever.asap@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-            asapabedi@gmail.com
+            ever.asap@gmail.com
         </a>{' '}
           it also works!
       </p>

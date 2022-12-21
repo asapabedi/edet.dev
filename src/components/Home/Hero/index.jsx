@@ -1,14 +1,14 @@
-import React, { lazy, Suspense } from 'react'
-import Link from 'gatsby-link'
-import ErrorBoundary from 'components/ErrorBoundary'
+import React from 'react'
+// import Link from 'gatsby-link'
+// import ErrorBoundary from 'components/ErrorBoundary'
 import { SocialIcons, DarkSwitcher } from 'components/Common'
 // import { Nav } from 'components/Layout'
 import classes from './hero.module.styl'
 import './hero.styl'
 
-const Newjobs = lazy(() => import('components/Common/Alerts/newjobs'))
+// const Newjobs = lazy(() => import('components/Common/Alerts/newjobs'))
 
-export const Hero = ({ navLinks, socialIcons, avatar }) => (
+export const Hero = ({ socialIcons, avatar }) => (
   <div className={'hero ' + classes.hero}>
     <div
       className={classes.inner}
@@ -18,24 +18,23 @@ export const Hero = ({ navLinks, socialIcons, avatar }) => (
       <h1 className={classes.title}>
         <span>Hello, my name is</span>
         <strong itemProp="name">
-          <Link itemProp="url" to="/about">Abednego Edet</Link>
+          <a>Abednego Edet</a>
         </strong>.
-        <meta itemProp="jobTitle" content="fullstack web engineer" />
-        <meta itemProp="worksFor" content="Real people" />
+        <meta itemProp="jobTitle" content="fullstack software engineer" />
+        <meta itemProp="worksFor" content="Vidor" />
         {avatar &&
           <img src={avatar.src} itemProp="image" alt={`photo of Abednego Edet`} style={{ display: 'none' }} />
         }
       </h1>
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         {typeof window !== 'undefined' && <Suspense fallback={<span />}><Newjobs /></Suspense>}
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       <p
         className={classes.presentation}
         role="presentation"
         itemProp="description"
       >
-        I am a <strong itemProp="jobTitle">freelance software developer</strong>.{' '}
-        I help <Link itemProp="url" to="/portfolio">brands and businesses</Link> create stunning web projects. In my spare time I write on <a href="https://dev.to/asapabedi" target="_blank" rel="noopener noreferrer">dev.to</a>,{' '} Making the world for others a little easier.
+        I'm <strong itemProp="jobTitle">full stack software engineer</strong>, currently building serverless applications at <a itemProp="url" target="_blank" href="https://vidor.io" rel="noopener noreferrer">{'Vidor'}</a> using React, Node.js, TypeScript & AWS.<br />{' '}Formerly with <a target="_blank" href="https://auth0.com" rel="noopener noreferrer">Auth0</a>.
       </p>
       {/* <Nav navLinks={navLinks} /> */}
       <SocialIcons icons={socialIcons} />

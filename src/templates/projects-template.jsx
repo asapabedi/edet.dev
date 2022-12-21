@@ -75,11 +75,6 @@ export const projectsQuery = graphql`
             tags
             image {
               publicURL
-              childImageSharp {
-                sizes(maxWidth: 1300, quality: 90) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
             }
           }
         }

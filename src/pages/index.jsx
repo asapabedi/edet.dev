@@ -12,7 +12,7 @@ export default Index
 
 export const indexQuery = graphql`
   query IndexQuery {
-    file(relativePath: { eq: "about/avatar.jpg" }) {
+    file(relativePath: { eq: "about/avatar.jpeg" }) {
       childImageSharp {
         fixed(width: 300, height: 300, quality: 90) {
           src
@@ -26,10 +26,9 @@ export const indexQuery = graphql`
     site {
       siteMetadata {
         social {
-          dev
-          twitter
           github
-          linkedin
+          twitter
+          dev
         }
       }
     }

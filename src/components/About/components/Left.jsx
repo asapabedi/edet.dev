@@ -1,7 +1,7 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 // import ErrorBoundary from 'components/ErrorBoundary'
 import { SocialIcons, Image } from 'components/Common'
-import { Feed } from 'components/Instagram'
+// import { Feed } from 'components/Instagram'
 import { Skills } from 'components/About/Skills'
 
 // const Newjobs = lazy(() => import('components/Common/Alerts/newjobs'))

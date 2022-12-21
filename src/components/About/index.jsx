@@ -23,7 +23,7 @@ const About = ({ data }) => {
     <Main>
       <SEO
         title="Who am I?"
-        description={`Meu nome é Abednego Edet Costa (muito prazer). Tenho ${ _age } anos, nasci e cresci em uma cidadezinha do interior de Rondônia chamada Ariquemes, sai de lá com 18 anos para me aventurar em Curitiba/PR onde moro atualmente.`}
+        description={`My name is Abednego Edet (pleased to meet you).`}
         image={data.file.childImageSharp.fixed.src}
         pathname="/about"
       />
