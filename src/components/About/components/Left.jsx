@@ -1,6 +1,8 @@
 import React from 'react'
 // import ErrorBoundary from 'components/ErrorBoundary'
-import { SocialIcons, Image } from 'components/Common'
+import { SocialIcons
+  // Image
+} from 'components/Common'
 // import { Feed } from 'components/Instagram'
 import { Skills } from 'components/About/Skills'
 
@@ -9,12 +11,12 @@ import { Skills } from 'components/About/Skills'
 export const Left = ({ data, classes }) => (
   <div className={`about__left ${ classes.left }`}>
     <div className={`card ${ classes.inner }`}>
-      <Image
+      {/* <Image
         node={data.file}
         className={classes.image}
         title="Photo of Abednego"
         alt="Photo of Abednego"
-      />
+      /> */}
       {/* {typeof window !== 'undefined' && <ErrorBoundary>
         <Suspense fallback={<span />}><Newjobs /></Suspense>
       </ErrorBoundary>} */}

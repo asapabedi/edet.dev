@@ -36,7 +36,7 @@ class ContactForm extends Component {
     this.state = {
       message: {
         success: `Your email has been sent successfully.
-                  You will get a response soon.`,
+        You will get a response soon.`,
         error: `Error sending your email.`
       }
     }

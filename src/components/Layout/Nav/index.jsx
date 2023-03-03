@@ -52,8 +52,8 @@ export class Nav extends React.Component {
           {this.props.navLinks.map(item => {
             return (
               <li className={`nav__item ${ classes.item }`} key={item.path}>
-                {item.name === 'Blog' ?
-                  (<a
+                {item.name === 'Blog'
+                  ? (<a
                     className={`nav__link ${ classes.link }`}
                     href={item.path}
                     target="_blank"

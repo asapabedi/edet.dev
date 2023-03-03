@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+// import { graphql } from 'gatsby'
 import { SEO, PageHeader, Pagination } from 'components/Common'
 import { Main, Container } from 'components/Layout'
 import { ProjectList } from 'components/Projects'
@@ -53,32 +53,32 @@ export default ({ data, pageContext }) => {
   )
 }
 
-export const projectsQuery = graphql`
-  query ProjectsPageQuery($skip: Int!, $limit: Int!) {
-    portfolioThree: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { layout: { eq: "project" } } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 150)
-          frontmatter {
-            layout
-            path
-            title
-            date(formatString: "MMM/YYYY", locale: "en-NG")
-            category
-            description
-            tags
-            image {
-              publicURL
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const projectsQuery = graphql`
+//   query ProjectsPageQuery($skip: Int!, $limit: Int!) {
+//     portfolioThree: allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       filter: { frontmatter: { layout: { eq: "project" } } }
+//       limit: $limit
+//       skip: $skip
+//     ) {
+//       edges {
+//         node {
+//           id
+//           excerpt(pruneLength: 150)
+//           frontmatter {
+//             layout
+//             path
+//             title
+//             date(formatString: "MMM/YYYY", locale: "en-NG")
+//             category
+//             description
+//             tags
+//             image {
+//               publicURL
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

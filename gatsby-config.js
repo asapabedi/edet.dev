@@ -35,16 +35,16 @@ module.exports = {
       ]
     }
   },
+  // { resolve: `gatsby-transformer-remark` },
   {
     resolve: `gatsby-plugin-sitemap`,
     options: pluginSitemap
   },
   `gatsby-plugin-offline`,
   `gatsby-plugin-image`,
-  `gatsby-plugin-sharp`,
   `gatsby-plugin-react-helmet`,
   {
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    resolve: `gatsby-plugin-google-fonts`,
     options: pluginFonts
   },
   {

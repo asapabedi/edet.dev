@@ -68,49 +68,49 @@ function addSiblingNodes (createNodeField) {
   }
 }
 
-exports.onCreateNode = ({
-  node,
-  actions,
-  getNode
-}) => {
-  let slug
-  const {
-    createNodeField
-  } = actions
+// exports.onCreateNode = ({
+//   node,
+//   actions,
+//   getNode
+// }) => {
+//   let slug
+//   const {
+//     createNodeField
+//   } = actions
 
-  if (node.internal.type === 'MarkdownRemark') {
-    const fileNode = getNode(node.parent)
-    const parsedFilePath = parse(fileNode.relativePath)
+//   if (node.internal.type === 'MarkdownRemark') {
+//     const fileNode = getNode(node.parent)
+//     const parsedFilePath = parse(fileNode.relativePath)
 
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
-    ) {
-      slug = `/${ kebabCase(node.frontmatter.title) }`
-    } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
-      slug = `/${ parsedFilePath.dir }/${ parsedFilePath.name }/`
-    } else if (parsedFilePath.dir === '') {
-      slug = `/${ parsedFilePath.name }/`
-    } else {
-      slug = `/${ parsedFilePath.dir }/`
-    }
+//     if (
+//       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+//       Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+//     ) {
+//       slug = `/${ kebabCase(node.frontmatter.title) }`
+//     } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
+//       slug = `/${ parsedFilePath.dir }/${ parsedFilePath.name }/`
+//     } else if (parsedFilePath.dir === '') {
+//       slug = `/${ parsedFilePath.name }/`
+//     } else {
+//       slug = `/${ parsedFilePath.dir }/`
+//     }
 
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
-    ) {
-      slug = `/${ kebabCase(node.frontmatter.path) }`
-    }
+//     if (
+//       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+//       Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
+//     ) {
+//       slug = `/${ kebabCase(node.frontmatter.path) }`
+//     }
 
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
+//     createNodeField({
+//       node,
+//       name: 'slug',
+//       value: slug
+//     })
 
-    postNodes.push(node)
-  }
-}
+//     postNodes.push(node)
+//   }
+// }
 
 exports.setFieldsOnGraphQLNodeType = ({
   type,
@@ -121,89 +121,89 @@ exports.setFieldsOnGraphQLNodeType = ({
   }
 }
 
-exports.createPages = ({
-  graphql,
-  actions
-}) => {
-  const {
-    createPage
-  } = actions
+// exports.createPages = ({
+//   graphql,
+//   actions
+// }) => {
+//   const {
+//     createPage
+//   } = actions
 
-  return new Promise((resolve, reject) => {
-    resolve(
-      graphql(
-        `
-        {
-          postsQuery: allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { layout: { eq: "post" } } },
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 250)
-                frontmatter {
-                  layout
-                  path
-                  title
-                  date
-                  category
-                }
-              }
-            }
-          }
-          projectsQuery: allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { layout: { eq: "project" } } },
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 250)
-                frontmatter {
-                  layout
-                  path
-                  title
-                  date
-                  category
-                }
-              }
-            }
-          }
-          allMarkdownRemark {
-            edges {
-              node {
-                id
-                frontmatter {
-                  layout
-                  path
-                  title
-                  tags
-                  category
-                }
-              }
-            }
-          }
-        }
-      `
-      ).then(result => {
-        if (result.errors) reject(result.errors)
+//   return new Promise((resolve, reject) => {
+//     resolve(
+//       graphql(
+//         `
+//         {
+//           postsQuery: allMarkdownRemark(
+//             sort: { order: DESC, fields: [frontmatter___date] }
+//             filter: { frontmatter: { layout: { eq: "post" } } },
+//           ) {
+//             edges {
+//               node {
+//                 excerpt(pruneLength: 250)
+//                 frontmatter {
+//                   layout
+//                   path
+//                   title
+//                   date
+//                   category
+//                 }
+//               }
+//             }
+//           }
+//           projectsQuery: allMarkdownRemark(
+//             sort: { order: DESC, fields: [frontmatter___date] }
+//             filter: { frontmatter: { layout: { eq: "project" } } },
+//           ) {
+//             edges {
+//               node {
+//                 excerpt(pruneLength: 250)
+//                 frontmatter {
+//                   layout
+//                   path
+//                   title
+//                   date
+//                   category
+//                 }
+//               }
+//             }
+//           }
+//           allMarkdownRemark {
+//             edges {
+//               node {
+//                 id
+//                 frontmatter {
+//                   layout
+//                   path
+//                   title
+//                   tags
+//                   category
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       `
+//       ).then(result => {
+//         if (result.errors) reject(result.errors)
 
-        const {
-          postsQuery,
-          projectsQuery,
-          allMarkdownRemark
-        } = result.data
+//         const {
+//           // postsQuery,
+//           projectsQuery,
+//           allMarkdownRemark
+//         } = result.data
 
-        allMarkdownRemark.edges.forEach(({
-          node
-        }) => {
-          createSinglePages(createPage, node.frontmatter)
-        })
+//         allMarkdownRemark.edges.forEach(({
+//           node
+//         }) => {
+//           createSinglePages(createPage, node.frontmatter)
+//         })
 
-        contentPaginate(createPage, projectsQuery, '/portfolio', 'projects', 5)
-      })
-    )
-  })
-}
+//         contentPaginate(createPage, projectsQuery, '/portfolio', 'projects', 5)
+//       })
+//     )
+//   })
+// }
 
 exports.onCreatePage = ({
   page
