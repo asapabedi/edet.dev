@@ -104,6 +104,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.0",
     "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-standard": "^12.0.0",
@@ -112,7 +113,11 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "postcss": "^8.1.10",
+    "postcss-import": "^13.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-url": "^10.1.1"
   },
   "resolutions": {
     "minipass": "^3.0.0"
